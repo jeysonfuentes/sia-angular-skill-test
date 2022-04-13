@@ -114,7 +114,7 @@
     </form>
   </div>
   <div class="message__detail">
-    <ag-grid-angular style="width: 100%; height:600px;" class="ag-theme-alpine" [rowData]="history"
+    <ag-grid-angular style="width: 100%; height:100%;" class="ag-theme-alpine" [rowData]="history"
       [columnDefs]="columnDefs" [colResizeDefault]="colResizeDefault" [defaultColDef]="defaultColDef"
       [cacheQuickFilter]="true" [pagination]="true" (gridReady)="onGridReady($event)">
     </ag-grid-angular>
