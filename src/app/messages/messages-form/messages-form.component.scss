@@ -1,0 +1,9 @@
+.message {
+  @apply flex justify-around;
+  &__form {
+    @apply bg-white p-6 shadow-md w-4/12
+  }
+  &__detail {
+    @apply bg-white p-6 shadow-md w-7/12
+  }
+}

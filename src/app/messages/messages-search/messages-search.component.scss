@@ -1,0 +1,16 @@
+.search {
+  @apply flex justify-start mb-4 gap-2;
+  &__input {
+    @apply flex w-1/2 justify-start ;
+    & > input {
+      @apply p-2 w-full ;
+    }
+  }
+  &__buttons {
+    @apply flex gap-2;
+    & button {
+      @apply bg-gray-800 text-white p-0 px-4 hover:bg-gray-700
+    }
+
+  }
+}

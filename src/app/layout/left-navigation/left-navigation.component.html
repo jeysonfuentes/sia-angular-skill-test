@@ -1,0 +1,16 @@
+<div #leftNavigation class="flex flex-col justify-start items-start px-6 py-4 bg-gray-800 min-h-screen w-full shadow-md text-white">
+
+  <ul class="flex flex-col p-0 gap-4">
+
+    <ng-template ngFor let-route [ngForOf]="parentRoutes">
+      <li class="flex justify-center items-center p-5 text-base pl-4" >
+        <a [routerLink]="route.path" routerLinkActive="item-active"
+          [title]="route.label">
+          <span class="menu__link-text">{{route.label}}</span>
+        </a>
+      </li>
+    </ng-template>
+
+  </ul>
+
+</div>

@@ -1,0 +1,10 @@
+<div class="search">
+  <div class="search__input">
+    <input [(ngModel)]="query" (input)="filter()" type="text">
+  </div>
+  <div class="search__buttons">
+    <button (click)="refresh()">Actualizar</button>
+    <button (click)="exportData()" *ngxPermissionsOnly="[PROFILES.ADMIN]">Exportar</button>
+    <button (click)="addMessage()" *ngxPermissionsOnly="[PROFILES.ADMIN]">Agregar</button>
+  </div>
+</div>

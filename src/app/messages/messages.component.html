@@ -1,0 +1,5 @@
+
+<app-messages-search (refreshData)="refreshData()" (openNewMessage)="openNewMessage()" (export)="export()"
+  (filterText)="setFilterText($event)"></app-messages-search>
+
+<app-messages-list [messages]="messages" [filterText]="query"  (exportDataCSV)="getGridAPI($event)" (rowDoubleClick)="editMessage($event)"></app-messages-list>
